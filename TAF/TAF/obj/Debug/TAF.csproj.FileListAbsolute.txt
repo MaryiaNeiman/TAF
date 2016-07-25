@@ -1,0 +1,10 @@
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAF\TAF\bin\Debug\TAF.dll
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAF\TAF\bin\Debug\TAF.pdb
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAF\TAF\bin\Debug\CoreTAF.dll
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAF\TAF\bin\Debug\WebDriver.dll
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAF\TAF\bin\Debug\WebDriver.Support.dll
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAF\TAF\bin\Debug\CoreTAF.pdb
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAF\TAF\bin\Debug\WebDriver.xml
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAF\TAF\bin\Debug\WebDriver.Support.xml
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAF\TAF\obj\Debug\TAF.dll
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAF\TAF\obj\Debug\TAF.pdb
