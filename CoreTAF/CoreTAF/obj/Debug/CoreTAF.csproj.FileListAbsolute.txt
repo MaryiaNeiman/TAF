@@ -1,0 +1,9 @@
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\CoreTAF\CoreTAF\bin\Debug\CoreTAF.dll.config
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\CoreTAF\CoreTAF\bin\Debug\CoreTAF.dll
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\CoreTAF\CoreTAF\bin\Debug\CoreTAF.pdb
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\CoreTAF\CoreTAF\bin\Debug\WebDriver.dll
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\CoreTAF\CoreTAF\bin\Debug\WebDriver.Support.dll
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\CoreTAF\CoreTAF\bin\Debug\WebDriver.xml
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\CoreTAF\CoreTAF\bin\Debug\WebDriver.Support.xml
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\CoreTAF\CoreTAF\obj\Debug\CoreTAF.dll
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\CoreTAF\CoreTAF\obj\Debug\CoreTAF.pdb
