@@ -7,3 +7,5 @@ c:\users\maryia_neiman\documents\visual studio 2015\Projects\CoreTAF\CoreTAF\bin
 c:\users\maryia_neiman\documents\visual studio 2015\Projects\CoreTAF\CoreTAF\bin\Debug\WebDriver.Support.xml
 c:\users\maryia_neiman\documents\visual studio 2015\Projects\CoreTAF\CoreTAF\obj\Debug\CoreTAF.dll
 c:\users\maryia_neiman\documents\visual studio 2015\Projects\CoreTAF\CoreTAF\obj\Debug\CoreTAF.pdb
+C:\Users\Maryia_Neiman\Documents\Visual Studio 2015\Projects\CoreTAF\CoreTAF\obj\Debug\Interop.AutoItX3Lib.dll
+C:\Users\Maryia_Neiman\Documents\Visual Studio 2015\Projects\CoreTAF\CoreTAF\obj\Debug\CoreTAF.csproj.ResolveComReference.cache

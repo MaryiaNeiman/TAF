@@ -27,6 +27,7 @@ namespace CoreTAF.Page
 
         public void GoToPage()
         {
+            //Driver.DriverInstance.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromSeconds(10));
             Driver.DriverInstance.Navigate().GoToUrl(url);
         }
 
@@ -35,7 +36,7 @@ namespace CoreTAF.Page
             return message;
         }
 
-        public void ClosePage()
+        public static void ClosePage()
         {
             Driver.DriverInstance.Close();
         }

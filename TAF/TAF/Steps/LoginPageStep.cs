@@ -11,7 +11,7 @@ using TAF.Page;
 namespace TAF.Steps
 
 {
-    public class LoginPageStep
+    public class LoginPageStep :Step
     {
         private static string URL_PAGE = "https://www.gmail.com";
         public static void OpenGmail()
@@ -20,7 +20,7 @@ namespace TAF.Steps
             lp.GoToPage();
         }
        
-
+      
         public static void SignIn(string email, string password)
         {
             LoginPage lp = new LoginPage(URL_PAGE);

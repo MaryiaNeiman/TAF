@@ -7,14 +7,13 @@ using TAF.Page;
 
 namespace TAF.Steps
 {
-   public class AccountsPageStep : Step
+   public class SettingPageStep : Step
     {
+        public static void ForwardMail()
 
-        public static void AddAccount()
         {
-            AccountsPage ap = new AccountsPage();
-            ap.ClickOnHref();
+            SettingPage sp = new SettingPage();
+            sp.ClickOnForwarding();
         }
-
     }
 }

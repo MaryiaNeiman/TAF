@@ -14,6 +14,8 @@ namespace CoreTAF.Utility.WebDriver
     {
         private static IWebDriver driverInstance = CreateDriver();
 
+        
+
         private Driver()
         {
         }
@@ -25,6 +27,7 @@ namespace CoreTAF.Utility.WebDriver
               return driverInstance;
             }
         }
+
 
         //public static void Close()
         //{
@@ -39,7 +42,7 @@ namespace CoreTAF.Utility.WebDriver
         {
             string _browser = ConfigurationManager.AppSettings["Browser"];
 
-                switch (_browser)
+            switch (_browser)
             {
                 case "FireFox":
                     return new FirefoxDriver();

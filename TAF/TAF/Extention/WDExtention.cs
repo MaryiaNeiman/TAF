@@ -18,6 +18,13 @@ namespace TAF.Extention
           
         }
 
+
+        public static void WaitUntilClickable(this IWebDriver driver, By by)
+        {
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+            wait.Until(ExpectedConditions.ElementToBeClickable(by));
+
+        }
         public static bool IsElementPresent(this IWebDriver driver, By by)
         {
             try

@@ -26,6 +26,11 @@ namespace CoreTAF.Elements
 
         }
 
+        public void Click()
+        {
+            Driver.DriverInstance.FindElement(this.by).Click();
+        }
+
         //bool isPresent(By by); 
 
         //bool isPresent();  

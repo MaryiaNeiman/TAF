@@ -19,7 +19,7 @@ namespace TAF.Page
         Button buttonSignIn;
         TextBox tbEmail;
         TextBox tbPassword;
-        Href link;
+        Link link;
            
 
         public LoginPage(string url) : base (url) 
@@ -32,7 +32,7 @@ namespace TAF.Page
             tbEmail.by = (By.Id("Email"));
             tbPassword = new TextBox();
             tbPassword.by = (By.Id("Passwd"));
-            link = new Href();
+            link = new Link();
             link.by = (By.XPath("//a[@id='account-chooser-link']"));
             //link.by = (By.XPath("//a[contains(.,'Sign in with a different account']"));
         }

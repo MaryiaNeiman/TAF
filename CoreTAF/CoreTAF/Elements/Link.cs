@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using CoreTAF.Utility.WebDriver;
 namespace CoreTAF.Elements
 {
-    public class Href : Element
+    public class Link : Element
     {
         public void Click()
         {

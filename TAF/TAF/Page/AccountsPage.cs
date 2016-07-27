@@ -8,15 +8,16 @@ using CoreTAF.Page;
 using OpenQA.Selenium;
 using CoreTAF.Utility.WebDriver;
 using TAF.Extention;
+
 namespace TAF.Page
 {
-    class AccountsPage
+    class AccountsPage : BasePage
     {
-        Href addAccount;
+        Link addAccount;
 
         public AccountsPage()
         {
-            addAccount = new Href();
+            addAccount = new Link();
             addAccount.by = (By.XPath("//a[@id='account-chooser-add-account']"));
         }
 
@@ -26,5 +27,6 @@ namespace TAF.Page
             addAccount.Click();
 
         }
+       
     }
 }

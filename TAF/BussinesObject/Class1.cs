@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TAF
+namespace BussinesObject
 {
     public class Class1
     {
