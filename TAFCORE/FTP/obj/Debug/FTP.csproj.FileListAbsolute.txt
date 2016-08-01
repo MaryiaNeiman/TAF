@@ -1,0 +1,12 @@
+c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\bin\Debug\FTP.dll
+c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\bin\Debug\FTP.pdb
+c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\obj\Debug\FTP.dll
+c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\obj\Debug\FTP.pdb
+c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\bin\Debug\TAFCORE.dll
+c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\bin\Debug\WebDriver.dll
+c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\bin\Debug\log4net.dll
+c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\bin\Debug\WebDriver.Support.dll
+c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\bin\Debug\TAFCORE.pdb
+c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\bin\Debug\WebDriver.xml
+c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\bin\Debug\log4net.xml
+c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\bin\Debug\WebDriver.Support.xml

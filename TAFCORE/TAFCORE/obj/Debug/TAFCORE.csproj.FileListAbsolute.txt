@@ -1,0 +1,12 @@
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\bin\Debug\TAFCORE.dll
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\bin\Debug\TAFCORE.pdb
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\bin\Debug\log4net.dll
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\bin\Debug\WebDriver.dll
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\bin\Debug\WebDriver.Support.dll
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\bin\Debug\log4net.xml
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\bin\Debug\WebDriver.xml
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\bin\Debug\WebDriver.Support.xml
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\obj\Debug\Interop.AutoItX3Lib.dll
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\obj\Debug\TAFCORE.csproj.ResolveComReference.cache
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\obj\Debug\TAFCORE.dll
+c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\obj\Debug\TAFCORE.pdb
