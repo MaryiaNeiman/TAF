@@ -15,10 +15,13 @@ namespace FTP.Page
     {
         protected static string MAIL_TRASH = "https://mail.google.com/mail/u/0/#trash";
         public Link letter;
+        public Button buttonDelete;
 
         public TrashPage()
         {
             Driver.DriverInstance.Navigate().GoToUrl(MAIL_TRASH);
+            buttonDelete = new Button();
+            buttonDelete.by = (By.XPath("//div[text()='Delete forever']"));
         }
 
 
@@ -29,14 +32,25 @@ namespace FTP.Page
             string text;
             try
             {
-                text = Driver.DriverInstance.FindElement(By.XPath($"//tr[td[4]/div[2]/span[@email='{email}']]/td[6]/div/div/div/span[1]")).Text;
+                Driver.DriverInstance.FindElement(By.XPath($"//tr[td[4]/div[2]/span[@email='{email}'] and td[6]/div/div/div/span[1][.='{str}']]"));
                 Driver.DriverInstance.FindElement(By.XPath($"//tr[td[4]/div[2]/span[@email='{email}']]/td[7]/img"));
             }
             catch (NoSuchElementException)
             {
                 return false;
             }
-            return text.Equals(str);
+            return true;
+        }
+
+        public void SelectAllMail()
+        {
+            foreach (var el in Driver.DriverInstance.FindElements(By.XPath("//tr[td[4]/div[2]/span[@email]]/td[2]/div[@role='checkbox']")))
+            {
+                if (!el.Selected)
+                {
+                    el.Click();
+                }
+            }
         }
 
     }

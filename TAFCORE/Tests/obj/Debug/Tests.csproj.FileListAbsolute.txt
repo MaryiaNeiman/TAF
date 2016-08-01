@@ -15,3 +15,5 @@ c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\Tests\bin\D
 c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\Tests\obj\Debug\Tests.dll
 c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\Tests\obj\Debug\Tests.pdb
 c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\Tests\bin\Debug\Tests.dll.config
+C:\Users\Maryia_Neiman\Documents\Visual Studio 2015\Projects\TAFCORE\Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Maryia_Neiman\Documents\Visual Studio 2015\Projects\TAFCORE\Tests\bin\Debug\Newtonsoft.Json.xml

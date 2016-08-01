@@ -16,7 +16,8 @@ namespace FTP.Page
     {
         public Link linkForwardSetting;
         public Link linkThemes;
-
+        public Button buttonDelete;
+        public Link linkGeneral;
 
         public SettingPage()
         {
@@ -24,6 +25,8 @@ namespace FTP.Page
             linkForwardSetting.by = (By.XPath("//a[contains(.,'Forwarding and POP/IMAP')]"));
             linkThemes = new Link();
             linkThemes.by = (By.XPath("//a[contains(.,'Themes')]"));
+            linkGeneral = new Link();
+            linkGeneral.by = (By.XPath("//a[contains(.,'General')]"));
 
         }
 

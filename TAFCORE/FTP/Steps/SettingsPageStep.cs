@@ -22,5 +22,12 @@ namespace FTP.Steps
             SettingPage sp = new SettingPage();
             sp.linkThemes.Click();
         }
+
+        public static void GoToGeneral()
+        {
+            SettingPage sp = new SettingPage();
+            sp.linkGeneral.Click();
+        }
+
     }
 }

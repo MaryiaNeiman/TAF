@@ -10,3 +10,8 @@ c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\bin\Deb
 c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\bin\Debug\WebDriver.xml
 c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\bin\Debug\log4net.xml
 c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\FTP\bin\Debug\WebDriver.Support.xml
+C:\Users\Maryia_Neiman\Documents\Visual Studio 2015\Projects\TAFCORE\FTP\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Maryia_Neiman\Documents\Visual Studio 2015\Projects\TAFCORE\FTP\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Maryia_Neiman\Documents\Visual Studio 2015\Projects\TAFCORE\FTP\obj\Debug\FTP.Resource1.resources
+C:\Users\Maryia_Neiman\Documents\Visual Studio 2015\Projects\TAFCORE\FTP\obj\Debug\FTP.csproj.GenerateResource.Cache
+C:\Users\Maryia_Neiman\Documents\Visual Studio 2015\Projects\TAFCORE\FTP\obj\Debug\FTP.csprojResolveAssemblyReference.cache

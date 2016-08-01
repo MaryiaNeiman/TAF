@@ -15,6 +15,7 @@ namespace FTP.Steps
     {
         protected static string MAIL_SPAM = "https://mail.google.com/mail/u/0/#spam";
         protected static string MAIL_SETTING = "https://mail.google.com/mail/#settings/";
+        private static string MAIL_INBOX = "https://mail.google.com/mail/u/0/#inbox";
 
 
         public static void SendMassage(string name, string title, string text)
@@ -27,6 +28,10 @@ namespace FTP.Steps
             inp.buttonSend.Click();
 
 
+        }
+        public static void GoToInBoxPage()
+        {
+            Driver.DriverInstance.Navigate().GoToUrl(MAIL_INBOX);
         }
 
         public static void SendMassageWithAttach(string name, string title, string text, string path)
@@ -74,6 +79,24 @@ namespace FTP.Steps
 
         }
 
+        public static void MoveMailFromSpam(string email)
+        {
+            InBoxPage inp = new InBoxPage();
+            if (inp.SelectAllMail() == true)
+                inp.buttonNotSpam.Click();
+            else return;
+        }
+
+        public static void DeleteAllMail()
+        {
+            Thread.Sleep(5000);
+            Driver.DriverInstance.Navigate().GoToUrl(MAIL_INBOX);
+            Thread.Sleep(5000);
+            InBoxPage inp = new InBoxPage();
+            inp.SelectAllMail();
+            inp.buttonDelete.Click();
+        }
+
         public static void GoToSpam()
         {
             Driver.DriverInstance.Navigate().GoToUrl(MAIL_SPAM);
@@ -104,6 +127,25 @@ namespace FTP.Steps
         {
             InBoxPage inp = new InBoxPage();
             return Driver.DriverInstance.IsElementPresent(inp.lableAlertBigFile.by);
+        }
+
+        public static void CancelAlert()
+        {
+            InBoxPage inp = new InBoxPage();
+            inp.buttonCancel.Click();
+        }
+
+        public static string GetSignature()
+        {
+            InBoxPage inp = new InBoxPage();
+            inp.buttonCompose.Click();
+            return inp.tbSignature.GetText();
+        }
+
+        public static void CloseFormForMail()
+        {
+            InBoxPage inp = new InBoxPage();
+            inp.buttonClose.Click();
         }
     }
 }

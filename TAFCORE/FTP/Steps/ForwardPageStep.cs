@@ -8,7 +8,7 @@ using TAFCORE.Utility.WebDriver;
 
 namespace FTP.Steps
 {
-    public class ForwardPageStep
+    public class ForwardPageStep:Step
     {
 
         public static void AddForwordingAddress(string email)
@@ -38,6 +38,12 @@ namespace FTP.Steps
             fp.linkCreatingFilter.Click();
             fp.tbEmail2.ClearAndType(email);
             fp.CheckOnCkeckTextBox();
+        }
+
+        public static void RemoveForwarding()
+        {
+            ForwardPage fp = new ForwardPage();
+            fp.RemoveForwarding();
         }
     }
 }

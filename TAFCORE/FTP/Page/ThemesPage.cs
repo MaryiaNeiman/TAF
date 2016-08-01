@@ -15,6 +15,8 @@ namespace FTP.Page
         public Button buttonUploadPhoto;
         public Button buttonSelectedPhotoFromComputer;
         public Label labelMessage;
+        public Button buttonClose;
+        public Button buttonClose2;
 
             public ThemesPage()
         {
@@ -28,7 +30,10 @@ namespace FTP.Page
             buttonSelectedPhotoFromComputer.by = (By.XPath("//div[text()='Select a photo from your computer']"));
             labelMessage = new Label();
             labelMessage.by = (By.XPath("//span[contains(text(),'There was an upload error.')]"));
-
+            buttonClose = new Button();
+            buttonClose.by = (By.XPath("//div[@aria-label='Close']"));
+            buttonClose2 = new Button();
+            buttonClose2.by = (By.XPath("//span[@aria-label='Close']"));
 
         }
 
@@ -36,6 +41,11 @@ namespace FTP.Page
         {
             Driver.DriverInstance.SwitchTo().Frame(Driver.DriverInstance.FindElement(By.XPath("//iframe[@class='KA-JQ']")));
             
+        }
+
+        public void GoToFirstWindow()
+        {
+            Driver.DriverInstance.SwitchTo().DefaultContent();
         }
     }
 }

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FTP.Page;
+using System.Threading;
+using TAFCORE.Utility.WebDriver;
 
 namespace FTP.Steps
 {
@@ -22,6 +24,14 @@ namespace FTP.Steps
         {
             TrashPage tp = new TrashPage();
             return tp.CheckLetter(email, text);
+        }
+
+        public static void DeleteAllMail()
+        {
+            Thread.Sleep(5000);
+            TrashPage tp = new TrashPage();
+            tp.SelectAllMail();
+            tp.buttonDelete.Click();
         }
 
     }

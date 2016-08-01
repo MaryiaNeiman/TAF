@@ -15,6 +15,7 @@ namespace FTP.Page
         public Link letter;
         public TextBox search;
         public Button buttonSearch;
+        public Button buttonDelete;
 
         public ImportantPage()
         {
@@ -22,10 +23,14 @@ namespace FTP.Page
             search = new TextBox();
             search.by = (By.XPath("//h2[text()='Search']/../descendant::input"));
             search.ClearAndType("is:important");
+
             search.by = (By.XPath("//h2[text()='Search']/../descendant::input"));
             buttonSearch = new Button();
             buttonSearch.by = (By.XPath("//button[@aria-label='Search Gmail']"));
             buttonSearch.Click();
+
+            buttonDelete = new Button();
+            buttonDelete.by = (By.XPath("//div[text()='Delete forever']"));
 
         }
 
@@ -61,6 +66,17 @@ namespace FTP.Page
                 return true;
             }
             return false;
+        }
+
+        public void SelectAllMail()
+        {
+            foreach (var el in Driver.DriverInstance.FindElements(By.XPath("//tr[td[4]/div[2]/span[@email]]/td[2]/div[@role='checkbox']")))
+            {
+                if (!el.Selected)
+                {
+                    el.Click();
+                }
+            }
         }
     }
 }

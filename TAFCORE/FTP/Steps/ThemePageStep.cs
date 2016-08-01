@@ -27,5 +27,13 @@ namespace FTP.Steps
             ThemesPage tp = new ThemesPage();
             return Driver.DriverInstance.IsElementPresent(tp.labelMessage.by);
         }
+
+        public static void CloseWindow()
+        {
+            ThemesPage tp = new ThemesPage();
+            tp.buttonClose.Click();
+            tp.GoToFirstWindow();
+            tp.buttonClose2.Click();
+        }
     }
 }

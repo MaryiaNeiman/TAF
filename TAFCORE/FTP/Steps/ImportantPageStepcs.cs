@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FTP.Page;
+using System.Threading;
 
 namespace FTP.Steps
 {
@@ -13,6 +14,14 @@ namespace FTP.Steps
         {
             ImportantPage im = new ImportantPage();
             return im.CheckLetter(email, str1, str2);
+        }
+
+        public static void DeleteAllMail()
+        {
+            Thread.Sleep(5000);
+            ImportantPage tp = new ImportantPage();
+            tp.SelectAllMail();
+            tp.buttonDelete.Click();
         }
     }
 }

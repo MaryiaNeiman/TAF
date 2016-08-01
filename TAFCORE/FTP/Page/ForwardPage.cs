@@ -24,6 +24,7 @@ namespace FTP.Page
         public Link linkForwardSetting;
         public Link linkCreatingFilter;
         public TextBox tbEmail2;
+        
 
 
         public ForwardPage()
@@ -49,7 +50,13 @@ namespace FTP.Page
 
 
 
-
+        public void RemoveForwarding()
+        {
+            Driver.DriverInstance.FindElement(By.XPath("//span[contains(.,'Forward a copy of incoming mail to')]/select/option[contains(text(),'Remove')]")).Click();
+            Button buttonOk = new Button();
+            buttonOk.by = (By.XPath("//button[@name='ok']"));
+            buttonOk.Click();
+        }
 
         public void ConfirmForwarding()
         {

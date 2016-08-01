@@ -22,11 +22,14 @@ namespace FTP.Page
         public Button buttonSignOut;
         public CheckBox chBox;
         public Button buttonSpam;
-        public Button buttonSettings;
-        public Link linkSettings;
+        public Button buttonNotSpam;
+        public Button buttonDelete;
         public Link letter;
         public Button buttonAttach;
         public Label lableAlertBigFile;
+        public Button buttonCancel;
+        public TextBox tbSignature;
+        public Button buttonClose;
 
         public InBoxPage()
         {
@@ -45,21 +48,46 @@ namespace FTP.Page
             buttonSignOut = new Button();
             buttonSignOut.by = (By.XPath("//a[contains(.,'Sign out')]"));
             buttonAttach = new Button();
-            buttonAttach.by = (By.XPath("//div[@class='a1 aaA aMZ']"));
+            buttonAttach.by = (By.XPath("//div[@aria-label='Attach files']"));
             buttonSpam = new Button();
             buttonSpam.by = (By.XPath("//div[@class='asl T-I-J3 J-J5-Ji']"));
+            buttonNotSpam = new Button();
+            buttonNotSpam.by = (By.XPath("//div[text()='Not spam']"));
             lableAlertBigFile = new Label();
             lableAlertBigFile.by = (By.XPath("//div[@class='Kj-JD-K7 Kj-JD-K7-GIHV4']"));
+            buttonDelete = new Button();
+            buttonDelete.by = (By.XPath("//div[@class='ar9 T-I-J3 J-J5-Ji']"));
+            buttonCancel = new Button();
+            buttonCancel.by = (By.XPath("//button[@name='cancel']"));
+            tbSignature = new TextBox();
+            tbSignature.by = (By.XPath("//div[@class='gmail_signature']/div"));
+            buttonClose = new Button();
+            buttonClose.by = (By.XPath("//img[@alt='Close']"));
         }
 
 
+        public bool SelectAllMail()
+        {
+            if (Driver.DriverInstance.FindElements(By.XPath("//tr[td[4]/div[2]/span[@email]]/td[2]/div[@role='checkbox']")).Count == 0)
+                return false;
+            foreach (var el in Driver.DriverInstance.FindElements(By.XPath("//tr[td[4]/div[2]/span[@email]]/td[2]/div[@role='checkbox']")))
+            {
+                if (!el.Selected)
+                {
+                    el.Click();
+                }
+                
+            }
+            return true;
+        }
 
         public void ClickCheckBoxInLetter(string email)
         {
 
             chBox = new CheckBox();
             chBox.by = (By.XPath($"//tr[td[4]/div[2]/span[@email='{email}']]/td[2]/div[@role='checkbox']"));
-
+            
+          
             chBox.Select();
         }
 
@@ -67,7 +95,8 @@ namespace FTP.Page
         {
 
             letter = new Link();
-            letter.by = (By.XPath($"//tr/td[4]/div[2]/span[@email='{email}']"));
+            //letter.by = (By.XPath($"//tr/td[4]/div[2]/span[@email='{email}']"));
+            letter.by = (By.XPath($"//span[@email='{email}']"));
             letter.Click();
         }
 
@@ -75,19 +104,19 @@ namespace FTP.Page
 
         public bool CheckLetter(string email, string str)
         {
-
-            string text;
+            
             try
             {
-                text = Driver.DriverInstance.FindElement(By.XPath($"//tr[td[4]/div[2]/span[@email='{email}']]/td[6]/div/div/div/span[1]")).Text;
+                Driver.DriverInstance.FindElement(By.XPath($"//tr[td[4]/div[2]/span[@email='{email}'] and td[6]/div/div/div/span[1][.='{str}']]"));
 
             }
             catch (NoSuchElementException)
             {
                 return false;
             }
-            return text.Equals(str);
+            return true;
         }
+        
 
         //public void ClickButtonSettings()
         //{

@@ -16,9 +16,9 @@ namespace TAFCORE.Utility.Attachment
             IAutoItX3 autoIT = new AutoItX3();
             autoIT.WinActivate("File Upload");
             autoIT.Send(path);
-            Thread.Sleep(7000);
+            Thread.Sleep(3000);
             autoIT.Send("{ENTER}");
-            Thread.Sleep(7000);
+            Thread.Sleep(5000);
         }
     }
 }

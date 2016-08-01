@@ -12,14 +12,21 @@ namespace TAFCORE.Elements
 
         void Type(String text)
         {
-            WaitUntilVisible(this.by);
-            WrappedElement.SendKeys(text);
+            try
+            {
+                WaitUntilVisible(this.by);
+                WrappedElement.SendKeys(text);
+            }
+            catch (Exception ex)
+            {
+                LoggerHandler.WtiteErrorToLog("Text can't be enter", ex);
+            }
         }
 
 
         void Clear()
         {
-            WrappedElement.FindElement(this.by).Clear();
+            WrappedElement.Clear();
         }
 
 
@@ -35,6 +42,19 @@ namespace TAFCORE.Elements
             catch (Exception ex)
             {
                 LoggerHandler.WtiteErrorToLog("Text can't be enter", ex);
+            }
+        }
+
+        public string GetText()
+        {
+            try
+            {
+                return WrappedElement.Text;
+            }
+            catch (Exception ex)
+            {
+                LoggerHandler.WtiteErrorToLog("Text is absent", ex);
+                return null;
             }
         }
     }
