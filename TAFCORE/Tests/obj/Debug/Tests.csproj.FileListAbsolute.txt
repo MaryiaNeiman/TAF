@@ -17,3 +17,5 @@ c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\Tests\obj\D
 c:\Users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\Tests\bin\Debug\Tests.dll.config
 C:\Users\Maryia_Neiman\Documents\Visual Studio 2015\Projects\TAFCORE\Tests\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Maryia_Neiman\Documents\Visual Studio 2015\Projects\TAFCORE\Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Maryia_Neiman\Documents\Visual Studio 2015\Projects\TAFCORE\Tests\obj\Debug\Tests.Resource1.resources
+C:\Users\Maryia_Neiman\Documents\Visual Studio 2015\Projects\TAFCORE\Tests\obj\Debug\Tests.csproj.GenerateResource.Cache

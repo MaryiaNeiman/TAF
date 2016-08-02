@@ -13,7 +13,7 @@ namespace FTP.Steps
         public static void AddAccount()
         {
             AccountsPage ap = new AccountsPage();
-            ap.addAccount.Click();
+            ap.AddAccount.Click();
 
         }
 

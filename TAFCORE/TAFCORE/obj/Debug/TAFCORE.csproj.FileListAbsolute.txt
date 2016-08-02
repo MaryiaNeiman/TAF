@@ -10,3 +10,4 @@ c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\obj
 c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\obj\Debug\TAFCORE.csproj.ResolveComReference.cache
 c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\obj\Debug\TAFCORE.dll
 c:\users\maryia_neiman\documents\visual studio 2015\Projects\TAFCORE\TAFCORE\obj\Debug\TAFCORE.pdb
+C:\Users\Maryia_Neiman\Documents\Visual Studio 2015\Projects\TAFCORE\TAFCORE\obj\Debug\TAFCORE.csprojResolveAssemblyReference.cache

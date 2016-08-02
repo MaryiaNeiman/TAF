@@ -11,20 +11,21 @@ namespace FTP.Page
 {
     public class GeneralPage
     {
-      public  TextBox tbText;
-        public RadioButton rbSignature1;
-        public RadioButton rbSignature0;
-        public Button buttonSave;
+        public TextBox TbText { get; private set; } = new TextBox(By.XPath("//div[@aria-label='Signature']"));
+        public RadioButton RbSignature1 { get; private set; } = new RadioButton(By.XPath("//*[@name='sx_sg'][@value='1']"));
+        public RadioButton RbSignature0 { get; private set; } = new RadioButton(By.XPath("//*[@name='sx_sg'][@value='0']"));
+        public Button ButtonSave { get; private set; } = new Button(By.XPath("//button[@guidedhelpid='save_changes_button']"));
+
         public GeneralPage()
         {
-            tbText = new TextBox();
-            tbText.by = (By.XPath("//div[@aria-label='Signature']"));
-            rbSignature1 = new RadioButton();
-            rbSignature1.by = (By.XPath("//*[@name='sx_sg'][@value='1']"));
-            rbSignature0 = new RadioButton();
-            rbSignature0.by = (By.XPath("//*[@name='sx_sg'][@value='0']"));
-            buttonSave = new Button();
-            buttonSave.by = (By.XPath("//button[@guidedhelpid='save_changes_button']"));
+        //    TbText = new TextBox();
+        //    TbText.by = (By.XPath("//div[@aria-label='Signature']"));
+        //    RbSignature1 = new RadioButton();
+        //    RbSignature1.by = (By.XPath("//*[@name='sx_sg'][@value='1']"));
+        //    RbSignature0 = new RadioButton();
+        //    RbSignature0.by = (By.XPath("//*[@name='sx_sg'][@value='0']"));
+        //    ButtonSave = new Button();
+        //    ButtonSave.by = (By.XPath("//button[@guidedhelpid='save_changes_button']"));
         }
         
         

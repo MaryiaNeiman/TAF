@@ -9,6 +9,15 @@ namespace TAFCORE.Elements
 {
     public class Button : Element
     {
+        public Button()
+        {
+
+        }
+        public Button(By by) : base(by)
+        {
+           
+        }
+
         public void Click()
         {
             try

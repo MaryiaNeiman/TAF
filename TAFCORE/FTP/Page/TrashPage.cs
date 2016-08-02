@@ -14,14 +14,14 @@ namespace FTP.Page
     public class TrashPage
     {
         protected static string MAIL_TRASH = "https://mail.google.com/mail/u/0/#trash";
-        public Link letter;
-        public Button buttonDelete;
+        public Link Letter { get; set; }
+        public Button ButtonDelete { get; private set; } = new Button(By.XPath("//div[text()='Delete forever']"));
 
         public TrashPage()
         {
             Driver.DriverInstance.Navigate().GoToUrl(MAIL_TRASH);
-            buttonDelete = new Button();
-            buttonDelete.by = (By.XPath("//div[text()='Delete forever']"));
+            //ButtonDelete = new Button();
+            //ButtonDelete.by = (By.XPath("//div[text()='Delete forever']"));
         }
 
 

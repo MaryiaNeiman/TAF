@@ -32,15 +32,15 @@ namespace FTP.Steps
 
             else if (lp.IsEmailTBDisplayedAndEnable())
             {
-                lp.tbEmail.ClearAndType(email);
-                lp.buttonNext.Click();
-                lp.tbPassword.ClearAndType(password);
-                lp.buttonSignIn.Click();
+                lp.TbEmail.ClearAndType(email);
+                lp.ButtonNext.Click();
+                lp.TbPassword.ClearAndType(password);
+                lp.ButtonSignIn.Click();
             }
 
             else
             {
-                lp.link.Click();
+                lp.Link.Click();
                 AccountsPageStep.AddAccount();
                 LoginPageStep.SignIn(email, password);
             }

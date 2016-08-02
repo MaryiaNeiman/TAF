@@ -13,20 +13,20 @@ namespace FTP.Steps
 
         {
             SettingPage sp = new SettingPage();
-            sp.linkForwardSetting.Click();
+            sp.LinkForwardSetting.Click();
         }
 
         public static void GoToThemes()
 
         {
             SettingPage sp = new SettingPage();
-            sp.linkThemes.Click();
+            sp.LinkThemes.Click();
         }
 
         public static void GoToGeneral()
         {
             SettingPage sp = new SettingPage();
-            sp.linkGeneral.Click();
+            sp.LinkGeneral.Click();
         }
 
     }

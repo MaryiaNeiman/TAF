@@ -12,7 +12,7 @@ namespace FTP.Steps
         public static void ConfirmForwarding()
         {
             Message m = new Message();
-            m.link.Click();
+            m.Link.Click();
             m.ClickConfirm();
         }
     }

@@ -16,35 +16,36 @@ namespace FTP.Page
 {
     public class ForwardPage : BasePage
     {
-        public Button buttonAddForwordingAddress;
-        public TextBox tbEmail;
-        public Button buttonNext;
-        public RadioButton rbForwordCopy;
-        public Button buttonSaveChanges;
-        public Link linkForwardSetting;
-        public Link linkCreatingFilter;
-        public TextBox tbEmail2;
-        
+        public Button ButtonAddForwordingAddress { get; private set; } = new Button(By.XPath("//input[@act='add']") );
+        public TextBox TbEmail { get; private set; } = new TextBox(By.XPath("//div[@class='PN']/input"));
+        public Button ButtonNext { get; private set; } = new Button(By.XPath("//button[@name='next']"));
+        public RadioButton RbForwordCopy { get; private set; } = new RadioButton(By.XPath("//span[contains(.,'Forward a copy of incoming mail to')]/../preceding-sibling::td/input"));
+        public Button ButtonSaveChanges { get; private set; } = new Button(By.XPath("//table/tbody/tr[4]/td/div/button[1]"));
+        public Link LinkForwardSetting { get; private set; } = new Link(By.XPath("//span[contains(.,'Review Settings')]"));
+        public Link LinkCreatingFilter { get; private set; } = new Link(By.XPath("//span[@act='filter']"));
+        public TextBox TbEmail2 { get; private set; } = new TextBox(By.XPath("//label[contains(.,'From')]/../following-sibling::span/input"));
+
+
 
 
         public ForwardPage()
         {
-            buttonAddForwordingAddress = new Button();
-            buttonAddForwordingAddress.by = (By.XPath("//input[@act='add']"));
-            tbEmail = new TextBox();
-            tbEmail.by = (By.XPath("//div[@class='PN']/input"));
-            buttonNext = new Button();
-            buttonNext.by = (By.XPath("//button[@name='next']"));
-            rbForwordCopy = new RadioButton();
-            rbForwordCopy.by = (By.XPath("//span[contains(.,'Forward a copy of incoming mail to')]/../preceding-sibling::td/input"));
-            buttonSaveChanges = new Button();
-            buttonSaveChanges.by = (By.XPath("//table/tbody/tr[4]/td/div/button[1]"));
-            linkCreatingFilter = new Link();
-            linkCreatingFilter.by = (By.XPath("//span[@act='filter']"));
-            linkForwardSetting = new Link();
-            linkForwardSetting.by = (By.XPath("//span[contains(.,'Review Settings')]"));
-            tbEmail2 = new TextBox();
-            tbEmail2.by = (By.XPath("//label[contains(.,'From')]/../following-sibling::span/input"));
+            //ButtonAddForwordingAddress = new Button();
+            //ButtonAddForwordingAddress.by = (By.XPath("//input[@act='add']"));
+            //TbEmail = new TextBox();
+            //TbEmail.by = (By.XPath("//div[@class='PN']/input"));
+            //ButtonNext = new Button();
+            //ButtonNext.by = (By.XPath("//button[@name='next']"));
+            //RbForwordCopy = new RadioButton();
+            //RbForwordCopy.by = (By.XPath("//span[contains(.,'Forward a copy of incoming mail to')]/../preceding-sibling::td/input"));
+            //ButtonSaveChanges = new Button();
+            //ButtonSaveChanges.by = (By.XPath("//table/tbody/tr[4]/td/div/button[1]"));
+            //LinkCreatingFilter = new Link();
+            //LinkCreatingFilter.by = (By.XPath("//span[@act='filter']"));
+            //LinkForwardSetting = new Link();
+            //LinkForwardSetting.by = (By.XPath("//span[contains(.,'Review Settings')]"));
+            //TbEmail2 = new TextBox();
+            //TbEmail2.by = (By.XPath("//label[contains(.,'From')]/../following-sibling::span/input"));
 
         }
 

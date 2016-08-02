@@ -20,7 +20,14 @@ namespace TAFCORE.Elements
             }
         }
 
+        public Element()
+        {
 
+        }
+        public Element(By by)
+        {
+            this.by = by;
+        }
         public bool isDisplayed()
         {
             return WrappedElement.Displayed;

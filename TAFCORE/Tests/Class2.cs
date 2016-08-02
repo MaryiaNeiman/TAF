@@ -40,42 +40,42 @@ namespace Tests
         
             //1
            LoginPageStep.OpenGmail();
-            //LoginPageStep.SignIn(user2.Email, user2.Password);
-            ////2
-            //InBoxPageStep.ChooseSettings();
-            ////4
-            //SettingPageStep.ForwardMail();
-            ////5
-            //ForwardPageStep.AddForwordingAddress(user3.Email);
-            ////6
-            //InBoxPageStep.SignOutAccount();
-            //LoginPageStep.SignIn(user3.Email, user3.Password);
-            ////7
-            //InBoxPageStep.ClickOnLinkInMail("forwarding-noreply@google.com");
-            //MessageStep.ConfirmForwarding();
-            ////8
-            //InBoxPageStep.SignOutAccount();
-            //LoginPageStep.SignIn(user2.Email, user2.Password);
-            ////9,10
-            //InBoxPageStep.ChooseSettings();
-            //SettingPageStep.ForwardMail();
-            //ForwardPageStep.SaveRBChange();
+            LoginPageStep.SignIn(user2.Email, user2.Password);
+            //2
+            InBoxPageStep.ChooseSettings();
+            //4
+            SettingPageStep.ForwardMail();
+            //5
+            ForwardPageStep.AddForwordingAddress(user3.Email);
+            //6
+            InBoxPageStep.SignOutAccount();
+            LoginPageStep.SignIn(user3.Email, user3.Password);
+            //7
+            InBoxPageStep.ClickOnLinkInMail("forwarding-noreply@google.com");
+            MessageStep.ConfirmForwarding();
+            //8
+            InBoxPageStep.SignOutAccount();
+            LoginPageStep.SignIn(user2.Email, user2.Password);
+            //9,10
+            InBoxPageStep.ChooseSettings();
+            SettingPageStep.ForwardMail();
+            ForwardPageStep.SaveRBChange();
 
-            ////11,12
-            //ForwardPageStep.SetFilterSettings(user1.Email);
-            ////13
-            //InBoxPageStep.SignOutAccount();
-            //LoginPageStep.SignIn(user1.Email, user1.Password);
-            ////15
-            //InBoxPageStep.SendMassage(user2.Email, "Test3", "Hello");
-            ////14
-            //InBoxPageStep.SendMassageWithAttach(user2.Email, "Test4", "File", "C:\\Users\\Maryia_Neiman\\Pictures\\1.jpg");
+            //11,12
+            ForwardPageStep.SetFilterSettings(user1.Email);
+            //13
+            InBoxPageStep.SignOutAccount();
+            LoginPageStep.SignIn(user1.Email, user1.Password);
+            //15
+            InBoxPageStep.SendMassage(user2.Email, "Test3", "Hello");
+            //14
+            InBoxPageStep.SendMassageWithAttach(user2.Email, "Test4", "File", Resource1.PathToFile);
             //16
-            //InBoxPageStep.SignOutAccount();
+            InBoxPageStep.SignOutAccount();
             LoginPageStep.SignIn(user2.Email, user2.Password);
             //asssert
             Assert.IsTrue(TrashPageStep.CheckLetterInTrash(user1.Email, "Test4"));
-            Assert.IsTrue(ImportantPageStep.CheckLetterInImportant(user1.Email, "Test4", "Test3"));
+            //Assert.IsTrue(ImportantPageStep.CheckLetterInImportant(user1.Email, "Test4", "Test3"));
             Assert.IsTrue(InBoxPageStep.CheckLetter(user1.Email, "Test3"));
             InBoxPageStep.SignOutAccount();
             LoginPageStep.SignIn(user3.Email, user3.Password);

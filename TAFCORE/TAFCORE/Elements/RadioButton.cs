@@ -5,10 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using TAFCORE.Utility.WebDriver;
 using TAFCORE.Utility.Logger;
+using OpenQA.Selenium;
 namespace TAFCORE.Elements
 {
     public class RadioButton : Element
     {
+        public RadioButton() { }
+
+        public RadioButton(By by) : base(by) { }
         public void Click()
         {
             try

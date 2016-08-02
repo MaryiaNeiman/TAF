@@ -11,6 +11,14 @@ namespace TAFCORE.Elements
 {
     public class CheckBox : Element
     {
+        public CheckBox()
+        {
+
+        }
+        public CheckBox(By by) : base(by)
+        {
+
+        }
 
         public void Select()
         {

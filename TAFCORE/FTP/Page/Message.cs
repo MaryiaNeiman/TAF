@@ -12,21 +12,21 @@ namespace FTP.Page
 {
     public class Message : BasePage
     {
-        public Link link;
-        public Button buttonConfirm;
+        public Link Link { get; private set; } = new Link(By.XPath("//a[4]"));
+        public Button ButtonConfirm { get; private set; } = new Button(By.XPath("//input[@type='submit']"));
 
         public Message()
         {
-            link = new Link();
-            link.by = (By.XPath("//a[4]"));
-            buttonConfirm = new Button();
-            buttonConfirm.by = (By.XPath("//input[@type='submit']"));
+            //Link = new Link();
+            //Link.by = (By.XPath("//a[4]"));
+            //ButtonConfirm = new Button();
+            //ButtonConfirm.by = (By.XPath("//input[@type='submit']"));
         }
 
         public void ClickConfirm()
         {
             Driver.DriverInstance.SwitchTo().Window(Driver.DriverInstance.WindowHandles.Last());
-            buttonConfirm.Click();
+            ButtonConfirm.Click();
             Driver.DriverInstance.SwitchTo().Window(Driver.DriverInstance.WindowHandles.First());
         }
 

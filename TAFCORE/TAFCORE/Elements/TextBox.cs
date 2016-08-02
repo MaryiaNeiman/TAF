@@ -5,10 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using TAFCORE.Utility.WebDriver;
 using TAFCORE.Utility.Logger;
+using OpenQA.Selenium;
 namespace TAFCORE.Elements
 {
     public class TextBox : Element
     {
+        public TextBox() { }
+
+        public TextBox(By by) : base(by) { }
 
         void Type(String text)
         {

@@ -14,9 +14,9 @@ namespace FTP.Steps
         public static void AddForwordingAddress(string email)
         {
             ForwardPage fp = new ForwardPage();
-            fp.buttonAddForwordingAddress.Click();
-            fp.tbEmail.ClearAndType(email);
-            fp.buttonNext.Click();
+            fp.ButtonAddForwordingAddress.Click();
+            fp.TbEmail.ClearAndType(email);
+            fp.ButtonNext.Click();
             fp.ConfirmForwarding();
         }
 
@@ -25,18 +25,18 @@ namespace FTP.Steps
         public static void SaveRBChange()
         {
             ForwardPage fp = new ForwardPage();
-            fp.rbForwordCopy.Click();
-            fp.buttonSaveChanges.Click();
+            fp.RbForwordCopy.Click();
+            fp.ButtonSaveChanges.Click();
             System.Threading.Thread.Sleep(1000);
-            fp.linkForwardSetting.Click();
+            fp.LinkForwardSetting.Click();
         }
 
 
         public static void SetFilterSettings(string email)
         {
             ForwardPage fp = new ForwardPage();
-            fp.linkCreatingFilter.Click();
-            fp.tbEmail2.ClearAndType(email);
+            fp.LinkCreatingFilter.Click();
+            fp.TbEmail2.ClearAndType(email);
             fp.CheckOnCkeckTextBox();
         }
 

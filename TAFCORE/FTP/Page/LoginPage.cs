@@ -15,38 +15,38 @@ namespace FTP.Page
     {
 
 
-        public Button buttonNext;
-        public Button buttonSignIn;
-        public TextBox tbEmail;
-        public TextBox tbPassword;
-        public Link link;
+        public Button ButtonNext { get; private set; } = new Button(By.Id("next"));
+        public Button ButtonSignIn { get; private set; } = new Button(By.Id("signIn"));
+        public TextBox TbEmail { get; private set; } = new TextBox(By.Id("Email"));
+        public TextBox TbPassword { get; private set; } = new TextBox(By.Id("Passwd"));
+        public Link Link { get; private set; } = new Link(By.XPath("//a[@id='account-chooser-link']"));
 
 
         public LoginPage(string url) : base(url)
         {
-            buttonNext = new Button();
-            buttonNext.by = (By.Id("next"));
-            buttonSignIn = new Button();
-            buttonSignIn.by = (By.Id("signIn"));
-            tbEmail = new TextBox();
-            tbEmail.by = (By.Id("Email"));
-            tbPassword = new TextBox();
-            tbPassword.by = (By.Id("Passwd"));
-            link = new Link();
-            link.by = (By.XPath("//a[@id='account-chooser-link']"));
+            //ButtonNext = new Button();
+            //ButtonNext.by = (By.Id("next"));
+            //ButtonSignIn = new Button();
+            //ButtonSignIn.by = (By.Id("signIn"));
+            //TbEmail = new TextBox();
+            //TbEmail.by = (By.Id("Email"));
+            //TbPassword = new TextBox();
+            //TbPassword.by = (By.Id("Passwd"));
+            //Link = new Link();
+            //Link.by = (By.XPath("//a[@id='account-chooser-link']"));
             //link.by = (By.XPath("//a[contains(.,'Sign in with a different account']"));
         }
 
         public bool IsEmailTBDisplayedAndEnable()
         {
 
-            return tbEmail.isDisplayed() && tbEmail.isEnabled();
+            return TbEmail.isDisplayed() && TbEmail.isEnabled();
 
         }
         public bool IsEmailTBPresent()
         {
 
-            return Driver.DriverInstance.IsElementPresent(tbEmail.by);
+            return Driver.DriverInstance.IsElementPresent(TbEmail.by);
 
         }
 

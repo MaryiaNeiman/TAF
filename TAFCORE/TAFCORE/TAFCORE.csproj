@@ -66,6 +66,7 @@
     <Compile Include="Utility\Attachment\Attachment.cs" />
     <Compile Include="Utility\Logger\Logger.cs" />
     <Compile Include="Utility\Logger\LoggerHandler.cs" />
+    <Compile Include="Utility\Randomizer\RandomUntil.cs" />
     <Compile Include="Utility\WebDriver\Driver.cs" />
     <Compile Include="Utility\WebDriver\WDExtention.cs" />
   </ItemGroup>

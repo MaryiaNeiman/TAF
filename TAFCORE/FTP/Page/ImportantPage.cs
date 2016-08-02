@@ -12,25 +12,25 @@ namespace FTP.Page
     class ImportantPage
     {
         protected static string MAIL_IMP = "https://mail.google.com/mail/u/0/#imp";
-        public Link letter;
-        public TextBox search;
-        public Button buttonSearch;
-        public Button buttonDelete;
+        public Link Letter { get; private set; } 
+        public TextBox Search { get; private set; } = new TextBox(By.XPath("//h2[text()='Search']/../descendant::input"));
+        public Button ButtonSearch { get; private set; } = new Button(By.XPath("//button[@aria-label='Search Gmail']"));
+        public Button ButtonDelete { get; private set; } = new Button(By.XPath("//div[text()='Delete forever']"));
 
         public ImportantPage()
         {
             //Driver.DriverInstance.Navigate().GoToUrl(MAIL_IMP);
-            search = new TextBox();
-            search.by = (By.XPath("//h2[text()='Search']/../descendant::input"));
-            search.ClearAndType("is:important");
+            //Search = new TextBox();
+            //Search.by = (By.XPath("//h2[text()='Search']/../descendant::input"));
+            Search.ClearAndType("is:important");
 
-            search.by = (By.XPath("//h2[text()='Search']/../descendant::input"));
-            buttonSearch = new Button();
-            buttonSearch.by = (By.XPath("//button[@aria-label='Search Gmail']"));
-            buttonSearch.Click();
+            //Search.by = (By.XPath("//h2[text()='Search']/../descendant::input"));
+            //ButtonSearch = new Button();
+            //ButtonSearch.by = (By.XPath("//button[@aria-label='Search Gmail']"));
+            ButtonSearch.Click();
 
-            buttonDelete = new Button();
-            buttonDelete.by = (By.XPath("//div[text()='Delete forever']"));
+            //ButtonDelete = new Button();
+            //ButtonDelete.by = (By.XPath("//div[text()='Delete forever']"));
 
         }
 

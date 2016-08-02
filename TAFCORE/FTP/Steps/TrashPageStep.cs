@@ -31,7 +31,7 @@ namespace FTP.Steps
             Thread.Sleep(5000);
             TrashPage tp = new TrashPage();
             tp.SelectAllMail();
-            tp.buttonDelete.Click();
+            tp.ButtonDelete.Click();
         }
 
     }

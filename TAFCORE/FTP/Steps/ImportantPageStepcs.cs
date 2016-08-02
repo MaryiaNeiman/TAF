@@ -21,7 +21,7 @@ namespace FTP.Steps
             Thread.Sleep(5000);
             ImportantPage tp = new ImportantPage();
             tp.SelectAllMail();
-            tp.buttonDelete.Click();
+            tp.ButtonDelete.Click();
         }
     }
 }

@@ -13,16 +13,18 @@ namespace FTP.Steps
         public static void InputSignature(string signature)
         {
             GeneralPage gp = new GeneralPage();
-            gp.rbSignature1.Click();
-            gp.tbText.ClearAndType(signature);
-            gp.buttonSave.Click();
+            gp.RbSignature1.Click();
+            gp.TbText.ClearAndType(signature);
+            Thread.Sleep(4000);
+            gp.ButtonSave.Click();
+            Thread.Sleep(4000);
         }
 
         public static void DeleteSignature()
         {
             GeneralPage gp = new GeneralPage();
-            gp.rbSignature0.Click();
-            gp.buttonSave.Click();
+            gp.RbSignature0.Click();
+            gp.ButtonSave.Click();
         }
     }
 }

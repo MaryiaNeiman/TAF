@@ -14,26 +14,26 @@ namespace FTP.Steps
         public static void SetTheme(string path)
         {
             ThemesPage tp = new ThemesPage();
-            tp.linkSetThemes.Click();
-            tp.buttonMyPhoto.Click();
+            tp.LinkSetThemes.Click();
+            tp.ButtonMyPhoto.Click();
             tp.ChangeWindow();
-            tp.buttonUploadPhoto.Click();
-            tp.buttonSelectedPhotoFromComputer.Click();
+            tp.ButtonUploadPhoto.Click();
+            tp.ButtonSelectedPhotoFromComputer.Click();
             Attachment.AttachFile(path);
         }
 
         public static bool CheckMessageIsPresent()
         {
             ThemesPage tp = new ThemesPage();
-            return Driver.DriverInstance.IsElementPresent(tp.labelMessage.by);
+            return Driver.DriverInstance.IsElementPresent(tp.LabelMessage.by);
         }
 
         public static void CloseWindow()
         {
             ThemesPage tp = new ThemesPage();
-            tp.buttonClose.Click();
+            tp.ButtonClose.Click();
             tp.GoToFirstWindow();
-            tp.buttonClose2.Click();
+            tp.ButtonClose2.Click();
         }
     }
 }
